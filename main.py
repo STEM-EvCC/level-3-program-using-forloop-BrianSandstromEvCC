@@ -24,7 +24,7 @@ for i in range(len(mission_names)):
 
 # The calculated rate of successful missions is stored in "MissionSuccessRate."
 # It is calculated by dividing the number of successful missions by the total number of missions and then multiplying that by 100. (5/7) * 100 = 71.42857.
-# The "MissionSuccessRate" result is saved into a "SuccessRateVariable" so it can be printed later with proper formatting.
+# The "MissionSuccessRate" result is saved into "SuccessRateVariable" so it can be printed later with proper formatting.
 MissionSuccessRate = (SuccessfulMissionsNum / TotalMissionsNum) * 100
 SuccessRateVariable = MissionSuccessRate
 
