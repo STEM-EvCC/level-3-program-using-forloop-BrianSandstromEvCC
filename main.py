@@ -23,18 +23,20 @@ for i in range(len(mission_names)):
         MissionsPreY2K.append(mission_names[i])
 
 # The calculated rate of successful missions is stored in "MissionSuccessRate."
-# It is calculated by dividing the number of successful missions by the total number of missions and then multiplying that by 100. (5/7) * 100 = 71.42857
+# It is calculated by dividing the number of successful missions by the total number of missions and then multiplying that by 100. (5/7) * 100 = 71.42857.
+# The "MissionSuccessRate" result is saved into a "SuccessRateVariable" so it can be printed later with proper formatting.
 MissionSuccessRate = (SuccessfulMissionsNum / TotalMissionsNum) * 100
+SuccessRateVariable = MissionSuccessRate
 
 # These print lines print out the updated data into the required assignment template.
 # The first print line converts and prints the total number of missions, "TotalMissionsNum," from integers to strings.
 # Again, the second print line does the same as the first print line but with the "SuccessfulMissionsNum" data.
-# Next, the third print line takes the calculated success rate, "MissionSuccessRate," and formats the number to two decimal places. 71.43
-# The fourth print line prints the string "Missions launched before the year 2000:."
+# Next, the third print line takes the calculated success rate that was stored in "SuccessRateVariable" and formats the number to two decimal places. 71.43
+# The fourth print line prints the string "Missions launched before the year 2000: "
 # Finally, the last two lines belong to the second for loop, "MissionNameOutput," which loops and prints the data from "MissionsPreY2K," so it matches the required format design.
 print("Total number of missions: " + str(TotalMissionsNum))
 print("Number of successful missions: " + str(SuccessfulMissionsNum))
-print("Success rate: {:.2f}%".format(MissionSuccessRate))
+print(f"Success rate: {SuccessRateVariable:.2f}%")
 print("Missions launched before the year 2000:")
 for MissionNameOutput in MissionsPreY2K:
     print("- " + MissionNameOutput)
