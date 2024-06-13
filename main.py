@@ -31,7 +31,7 @@ SuccessRateVariable = MissionSuccessRate
 # These print lines print out the updated data into the required assignment template.
 # The first print line converts and prints the total number of missions, "TotalMissionsNum," from integers to strings.
 # Again, the second print line does the same as the first print line but with the "SuccessfulMissionsNum" data.
-# Next, the third print line takes the calculated success rate that was stored in "SuccessRateVariable" and formats the number to two decimal places. 71.43
+# Next, the third print line takes the calculated success rate number that was stored in "SuccessRateVariable" and formats it to two decimal places. 71.43
 # The fourth print line prints the string "Missions launched before the year 2000: "
 # Finally, the last two lines belong to the second for loop, "MissionNameOutput," which loops and prints the data from "MissionsPreY2K," so it matches the required format design.
 print("Total number of missions: " + str(TotalMissionsNum))
